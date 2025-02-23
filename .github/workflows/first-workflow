@@ -1,0 +1,22 @@
+name: first-workflow
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  first-workflow-job:
+    name: first job
+    runs-on: ubuntu-latest
+    steps:
+      - name: run a bash command
+        run: echo "hello world"
+        shell: bash
+  
+  second-workflow-job:
+    name: second job
+    runs-on: ubuntu-latest
+    steps:
+      - name: run a bash script
+        run: echo "hello from maroof1"
+        shell: bash
